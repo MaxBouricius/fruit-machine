@@ -1,0 +1,55 @@
+body{
+  background-color: rgba(255, 255, 255, .7);
+  background-image: url('transp.png'), url('grid.png');
+  background-color: #9b1c31;
+  overflow: auto;
+  width: 1240px;
+  margin: 0 auto;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 3%;
+  grid-template-columns: 160px 200px 200px 200px;
+  font-size: 3em;
+}
+.ads{
+  border-style: double;
+  font-size: 3em;
+  border-radius: 1px;
+  width: 200px;
+  height: 200px;
+}
+.wrappere{
+  padding: 0;
+  margin: 0;
+}
+#draaai{
+  grid-column: 3;
+}
+#b0{
+    grid-column:  2;
+    background-color: lightblue;
+
+}
+#b1{
+    grid-column:  3;
+    background-color: lightblue;
+}
+#b2{
+     grid-column:  4;
+     background-color: lightblue;
+}
+#Clicks{
+  grid-column: 3/4;
+  font-size: 16px;
+}
+#clicks{
+  font-size: 16px;
+}
+#cl{
+  font-size: 16px;
+}
+#win{
+  font-size: 30px;
+  
+}

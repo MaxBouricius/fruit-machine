@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="fruit.css">
+    <title>Fruitmachine</title>
+  </head>
+  <body>
+<h2> Fruitmachine </h2>
+<div class="wrapper">
+
+<p id="win"></p>
+
+<p id="b0" class="ads"> </p>
+<p id="b1" class="ads"> </p>
+<p id="b2" class="ads"> </p>
+
+<!-- <p id="clicks">Clicks:</p> -->
+
+
+
+    <!-- <button type="button" onClick="hustle()" id="draaai" value="Draai!"></button> -->
+
+    <script type="text/javascript">
+    function hustle(){
+        	let fruit = ["&#x1F347;", "&#127816;", "\ud83c\udf49", "\ud83c\udf4a", "\ud83c\udf4c", "\ud83c\udf4b"];
+    			for (i = 0;i < 3;i++) {
+          	var r = Math.floor(Math.random() * 6);
+         		document.getElementById("b"+i).innerHTML = fruit[r];
+       		}
+    		}
+        window.addEventListener('DOMContentLoaded', (event) => {
+        hustle();
+
+    });
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+
+    if (b0 == b1&&b1 == b2) {
+document.getElementById('win').innerHTML = ("YOU WIN!!")
+    }
+
+    </script>
+    <button type="button" id="Clicks" onClick="onClick();hustle()">Click me</button>
+    <p id="cl">Aantal keren gedraait: <a id="clicks">0</a></p>
+
+
+
+<!-- dit is de button die wel werkt met dingen zoals console.log en alert() maar niet met mijn randomizer -->
+
+  </div>
+  <script type="text/javascript" src=fruit.js>
+  </script>
+  </body>
+</html>
